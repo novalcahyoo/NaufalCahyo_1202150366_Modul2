@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context="com.naufalcahyo.modul2.naufalcahyo_1202150366_modul2.TakeAway">
+
+    //untuk take away
+    <TextView
+        android:id="@+id/identitasPemesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:gravity="center"
+        android:text="Identitas Pemesan"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/identitasPemesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/LightGrey" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/LightGrey" />
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Alamat"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/LightGrey" />
+
+    <EditText
+        android:id="@+id/catatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/alamat"
+        android:layout_below="@+id/alamat"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Catatan "
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/LightGrey" />
+
+    <Button
+        android:id="@+id/btnPilihPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="pilPes1"
+        android:text="Pilih Pesanan"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnTgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/identitasPemesan"
+        android:layout_below="@+id/catatan"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="showDatePickerDialog"
+        android:text="Tanggal" />
+
+    <Button
+        android:id="@+id/btnWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnTgl"
+        android:layout_alignBottom="@+id/btnTgl"
+        android:layout_alignEnd="@+id/catatan"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="showTimePickerDialog"
+        android:text="Waktu" />
+
+</RelativeLayout>

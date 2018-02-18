@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NAUFAL CAHYO_1202150366_MODUL2</string>
+    <string-array name="labels_array">
+        <item>--Pilih Meja Anda--</item>
+        <item>Meja 1</item>
+        <item>Meja 2</item>
+        <item>Meja 3</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_picker">datePicker</string>
+    <string name="time_picker">timePicker</string>
+
+    //nama string untuk mengganti tnaggal
+    <string name="date">Tanggal  </string>
+    <string name="time">Jam  </string>
+</resources>

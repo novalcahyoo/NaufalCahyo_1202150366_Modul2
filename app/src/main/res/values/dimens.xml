@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //dimensi untuk beberapa resource
+    <dimen name="padding_regular">10dp</dimen>
+    <dimen name="padding_wide">35dp</dimen>
+    <dimen name="width_gambar">200sp</dimen>
+    <dimen name="height_gambar">150sp</dimen>
+</resources>
