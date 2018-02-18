@@ -19,7 +19,7 @@ public class ExampleInstrumentedTest {
 
     @Test
     public void useAppContext() throws Exception {
-        // kontex dibawah app
+        // kontex dibawah app.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.naufalcahyo.modul2.naufalcahyo_1202150366_modul2", appContext.getPackageName());
